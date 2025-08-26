@@ -319,7 +319,9 @@ body{
 .search{ flex:1; max-width:540px; display:flex; align-items:center; gap:10px; background: #0f1117; border:1px solid rgba(140,150,170,.2); border-radius: 12px; padding:10px 12px; }
     .search input{ flex:1; background:transparent; border:0; color:var(--text); outline:none; font: inherit; }
     .search input::placeholder{ color:var(--muted); }
-    
+    @media screen and (max-width:700px) {
+        .search{  max-width:40%; }
+    }
     
 .product-section {
     margin-top: 20px;
