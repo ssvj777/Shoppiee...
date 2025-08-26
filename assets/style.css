@@ -512,6 +512,7 @@ iframe {
 @media screen and (max-width:1250px) {
     .products-box {
     flex-basis: 40%;
+    padding: 22px 0 22px;
     }
     /* Footer session grid direction */
     .footer-inner{ 
