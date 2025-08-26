@@ -560,7 +560,8 @@ iframe {
     }
 
     .products-box {
-    flex-basis: 70%;
+    flex-basis: 77%;
+    padding: 10px 0 10px;
     }
 }
 
