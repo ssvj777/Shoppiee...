@@ -331,6 +331,7 @@ html, body {
     border-radius: 20px;
     padding: 10px;
     object-fit: cover;
+    object-position: center;
 }
 
 .products-box:hover{ 
@@ -508,7 +509,17 @@ iframe {
 
 
 /* media query */
-@media screen and (max-width:700px) {
+@media screen and (max-width:1250px) {
+    .products-box {
+    flex-basis: 40%;
+    }
+    /* Footer session grid direction */
+    .footer-inner{ 
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+@media screen and (max-width:800px) {
 
     /* navbar Session display  */
     .navbar-menu-toggle {
@@ -548,8 +559,8 @@ iframe {
         grid-template-columns: 1fr;
     }
 
-    /* Footer session grid direction */
-    .footer-inner{ 
-        grid-template-columns: 1fr 1fr; 
+    .products-box {
+    flex-basis: 65%;
     }
 }
+
