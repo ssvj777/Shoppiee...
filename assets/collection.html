@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title and Icon -->
+    <title>Shoppiee</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- googele fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="logoContainer">
+        <span class="logo" aria-hidden="true">VJ</span>
+        <h1 class="brand">Shoppiee...</h1>
+      </div>
+      <form
+        class="search"
+        role="search"
+        aria-label="Search products (visual only)"
+      >
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z"
+            stroke="currentColor"
+            stroke-width="2"
+          />
+        </svg>
+        <input
+          class="searchBar"
+          id="search"
+          type="search"
+          placeholder="Search Products"
+          aria-label="Search"
+          width="100%"
+        />
+      </form>
+
+      <div class="navbar-links">
+        <a href="../index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./collection.html">Collections</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+
+      <div class="navbar-menu-toggle" onclick="showNavbar()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- side navbar -->
+    <div class="side-navbar">
+      <p class="x-icon" onclick="closeNavbar()">
+        <i class="fa-solid fa-xmark"></i>
+      </p>
+
+      <div class="side-navbar-links">
+        <a href="../index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./collection.html">Collections</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </div>
+
+    <!-- product -->
+    <div class="product-section">
+      <div class="products">
+        <!-- Product Card 1 -->
+        <article class="products-box">
+          <img
+            src="./img/headphones.jpg"
+            width="260px"
+            height="212px"
+            alt="Zeus-X Wireless Headphones"
+          />
+          <div class="card-body">
+            <p class="title">Zeus-X Wireless Headphones</p>
+            <div class="muted">Over-ear • 32h battery</div>
+            <div class="price">₹4,999</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 2 -->
+        <article class="products-box">
+          <img
+            src="./img/novaWatch.webp"
+            width="260px"
+            height="212px"
+            alt="Nova Smart Watch"
+          />
+          <div class="card-body">
+            <p class="title">Nova Smart Watch</p>
+            <div class="muted">AMOLED • GPS • 5ATM</div>
+            <div class="price">₹6,499</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 3 -->
+        <article class="products-box">
+          <img
+            src="./img/shoe.jpg"
+            width="260px"
+            height="212px"
+            alt="Drift Sneakers"
+          />
+          <div class="card-body">
+            <p class="title">Drift Sneakers</p>
+            <div class="muted">Breathable knit • Unisex</div>
+            <div class="price">₹2,299</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 4 -->
+        <article class="products-box">
+          <img
+            src="./img/backpack.jpeg"
+            width="260px"
+            height="212px"
+            alt="Orbit Backpack"
+          />
+          <div class="card-body">
+            <p class="title">Orbit Backpack</p>
+            <div class="muted">15.6" laptop • 20L</div>
+            <div class="price">₹1,899</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 5 -->
+        <article class="products-box">
+          <img
+            src="./img/earbuds.jpg"
+            width="260px"
+            height="212px"
+            alt="Pulse Earbuds"
+          />
+          <div class="card-body">
+            <p class="title">Pulse Earbuds</p>
+            <div class="muted">ENC mic • Type-C</div>
+            <div class="price">₹1,299</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 6 -->
+        <article class="products-box">
+          <img
+            src="./img/sunglass.webp"
+            width="260px"
+            height="212px"
+            alt="Flux Sunglasses"
+          />
+          <div class="card-body">
+            <p class="title">Flux Sunglasses</p>
+            <div class="muted">Polarized • UV400</div>
+            <div class="price">₹899</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 7 -->
+        <article class="products-box">
+          <img
+            src="./img/bag.webp"
+            width="260px"
+            height="212px"
+            alt="Canvas Tote"
+          />
+          <div class="card-body">
+            <p class="title">Canvas Tote</p>
+            <div class="muted">Organic cotton</div>
+            <div class="price">₹499</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 8 -->
+        <article class="products-box">
+          <img
+            src="./img/waterBottle.jpg"
+            width="260px"
+            height="212px"
+            alt="Terra Insulated Bottle"
+          />
+          <div class="card-body">
+            <p class="title">Terra Insulated Bottle</p>
+            <div class="muted">Steel • 1L • BPA-free</div>
+            <div class="price">₹749</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 9 -->
+        <article class="products-box">
+          <img
+            src="./img/neckband.png"
+            width="260px"
+            height="212px"
+            alt="Wireless NeckBand"
+          />
+          <div class="card-body">
+            <p class="title">Wireless NeckBand</p>
+            <div class="muted">Bluetooth 5.0 • Noise Cancelling</div>
+            <div class="price">₹1,999</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 10 -->
+        <article class="products-box">
+          <img
+            src="./img/watch.jpg"
+            width="260px"
+            height="212px"
+            alt="Smartwatch Pro"
+          />
+          <div class="card-body">
+            <p class="title">Smartwatch Pro</p>
+            <div class="muted">Fitness Tracker • Waterproof</div>
+            <div class="price">₹2,799</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 11 -->
+        <article class="products-box">
+          <img
+            src="./img/Running Shoes.jpg"
+            width="260px"
+            height="212px"
+            alt="Running Shoes"
+          />
+          <div class="card-body">
+            <p class="title">Running Shoes</p>
+            <div class="muted">Lightweight • Breathable</div>
+            <div class="price">₹1,499</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 12 -->
+        <article class="products-box">
+          <img
+            src="./img/Ergo Laptop Stand.jpg"
+            width="260px"
+            height="212px"
+            alt="Ergo Laptop Stand"
+          />
+          <div class="card-body">
+            <p class="title">Ergo Laptop Stand</p>
+            <div class="muted">Adjustable • Aluminum</div>
+            <div class="price">₹1,099</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 13 -->
+        <article class="products-box">
+          <img
+            src="./img/True Wireless Earbuds.jpg"
+            width="260px"
+            height="212px"
+            alt="True Wireless Earbuds"
+          />
+          <div class="card-body">
+            <p class="title">True Wireless Earbuds</p>
+            <div class="muted">Hi-Fi Sound • 20hr Battery</div>
+            <div class="price">₹1,299</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 14 -->
+        <article class="products-box">
+          <img
+            src="./img/Winter Jacket.webp"
+            width="260px"
+            height="212px"
+            alt="Winter Jacket"
+          />
+          <div class="card-body">
+            <p class="title">Winter Jacket</p>
+            <div class="muted">Warm • Water Resistant</div>
+            <div class="price">₹2,499</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 15 -->
+        <article class="products-box">
+          <img
+            src="./img/Ceramic Coffee Mug.jpg"
+            width="260px"
+            height="212px"
+            alt="Ceramic Coffee Mug"
+          />
+          <div class="card-body">
+            <p class="title">Ceramic Coffee Mug</p>
+            <div class="muted">350ml • Microwave Safe</div>
+            <div class="price">₹349</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 16 -->
+        <article class="products-box">
+          <img
+            src="./img/Travel Backpack.jpg"
+            width="260px"
+            height="212px"
+            alt="Travel Backpack"
+          />
+          <div class="card-body">
+            <p class="title">Travel Backpack</p>
+            <div class="muted">Waterproof • 30L</div>
+            <div class="price">₹1,799</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 17 -->
+        <article class="products-box">
+          <img
+            src="./img/Mechanical Keyboard.jpg"
+            width="260px"
+            height="212px"
+            alt="Mechanical Keyboard"
+          />
+          <div class="card-body">
+            <p class="title">Mechanical Keyboard</p>
+            <div class="muted">RGB Backlit • Blue Switches</div>
+            <div class="price">₹2,199</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 18 -->
+        <article class="products-box">
+          <img
+            src="./img/Leather Wallet.jpg"
+            width="260px"
+            height="212px"
+            alt="Leather Wallet"
+          />
+          <div class="card-body">
+            <p class="title">Leather Wallet</p>
+            <div class="muted">Genuine Leather • 6 Card Slots</div>
+            <div class="price">₹799</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 19 -->
+        <article class="products-box">
+          <img
+            src="./img/LED Table Lamp.jpg"
+            width="260px"
+            height="212px"
+            alt="LED Table Lamp"
+          />
+          <div class="card-body">
+            <p class="title">LED Table Lamp</p>
+            <div class="muted">Touch Control • Adjustable Brightness</div>
+            <div class="price">₹1,199</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 20 -->
+        <article class="products-box">
+          <img
+            src="./img/Casual Sneakers.jpg"
+            width="260px"
+            height="212px"
+            alt="Casual Sneakers"
+          />
+          <div class="card-body">
+            <p class="title">Casual Sneakers</p>
+            <div class="muted">Trendy • Lightweight</div>
+            <div class="price">₹1,299</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 21 -->
+        <article class="products-box">
+          <img
+            src="./img/Power Bank 20000mAh.jpg"
+            width="260px"
+            height="212px"
+            alt="Power Bank 20000mAh"
+          />
+          <div class="card-body">
+            <p class="title">Power Bank 20000mAh</p>
+            <div class="muted">Fast Charging • Dual USB</div>
+            <div class="price">₹1,499</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 22 -->
+        <article class="products-box">
+          <img
+            src="./img/Sports Cap.jpg"
+            width="260px"
+            height="212px"
+            alt="Sports Cap"
+          />
+          <div class="card-body">
+            <p class="title">Sports Cap</p>
+            <div class="muted">Adjustable • Breathable</div>
+            <div class="price">₹299</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footerContent">
+          <div class="brand">
+            <span class="logo">VJ</span> <span>Shoppiee...</span>
+          </div>
+          <p class="muted">
+            ©<span id="year">2025</span> Shoppiee. All rights reserved.
+          </p>
+          <small>Premium products curated for the modern lifestyle</small>
+        </div>
+
+        <nav class="footerContent">
+          <h4>Shop</h4>
+          <ul class="footerList">
+            <li><a href="./collection.html">All Products</a></li>
+            <li><a href="../index.html">New Arrivals</a></li>
+            <li><a href="../index.html">Most Searched</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footerContent">
+          <h4>Support</h4>
+          <ul class="footerList">
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./about.html">Shipping & Returns</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h4>Newsletter</h4>
+          <p class="muted">
+            Subscribe to get exclusive discounts and updates...
+          </p>
+          <form style="padding: 5px">
+            <input
+              type="email"
+              placeholder="you@example.com"
+              aria-label="Email"
+              style="
+                width: 100%;
+                padding: 10px 12px;
+                border-radius: 12px;
+                border: 1px solid rgba(140, 150, 170, 0.3);
+                background: #0f1117;
+                color: var(--text);
+                margin-bottom: 8px;
+              "
+            />
+            <button class="newsletterBtn" type="button">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

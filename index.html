@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title and Icon -->
+    <title>Shoppiee</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo.png"
+      type="image/x-icon"
+    />
+
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="./assets/style.css" />
+
+    <!-- googele fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="logoContainer">
+        <span class="logo" aria-hidden="true">VJ</span>
+        <span class="brand">Shoppiee...</span>
+      </div>
+
+      <div class="navbar-links">
+        <a href="./index.html">Home</a>
+        <a href="./assets/about.html">About</a>
+        <a href="./assets/collection.html">Collections</a>
+        <a href="./assets/contact.html">Contact</a>
+      </div>
+
+      <div class="navbar-menu-toggle" onclick="showNavbar()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- side navbar -->
+    <div class="side-navbar">
+      <p class="x-icon" onclick="closeNavbar()">
+        <i class="fa-solid fa-xmark"></i>
+      </p>
+
+      <div class="side-navbar-links">
+        <a href="./index.html">Home</a>
+        <a href="./assets/about.html">About</a>
+        <a href="./assets/collection.html">Collections</a>
+        <a href="./assets/contact.html">Contact</a>
+      </div>
+    </div>
+
+    <!-- Cover Page -->
+    <main class="container">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div>
+            <h1>
+              <em>Level up your style | With our stunning Collections.</em>
+            </h1>
+            <p>Premium products curated for the modern lifestyle.</p>
+            <div class="cta">
+              <a class="btn primary" href="./assets/collection.html"
+                >Shop Now</a
+              >
+              <a class="btn ghost" href="./assets/about.html">About Us</a>
+            </div>
+          </div>
+          <div>
+            <img
+              src="./assets/img/coverPicture.jpg"
+              alt="CoverPicture"
+              width="500px"
+              height="400px"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- service -->
+    <div class="service">
+      <div class="service-container1">
+        <div>
+          <h2>We Provide Best</h2>
+          <h2>Customer Experience</h2>
+        </div>
+
+        <div>
+          <p>
+            || We ensure that our Customer have the best Shopping Experience
+          </p>
+        </div>
+      </div>
+
+      <div class="service-container2">
+        <div>
+          <i class="fa-solid fa-shield-heart"></i>
+          <h4>Satisfaction Guarantee</h4>
+          <p>
+            We stand behind every purchase. If you're not 100% satisfied, we'll
+            make it right with easy returns and support.
+          </p>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-headset"></i>
+          <h4>24/7 Customer Support</h4>
+          <p>
+            Our support team is always here to help you with questions, orders,
+            or returns — anytime, any day.
+          </p>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-star"></i>
+          <h4>New Arrivals Every Day</h4>
+          <p>
+            Discover the latest trends and fresh styles daily — curated just for
+            you to keep your wardrobe up to date.
+          </p>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-truck-fast"></i>
+          <h4>Fast & Free Shipping</h4>
+          <p>
+            Enjoy lightning-fast delivery with free shipping on all orders, so
+            your favorites reach you sooner.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- new Arrival -->
+    <div class="newArrival">
+      <h2 class="new-arrival-header" id="newArrival">New Arrival</h2>
+      <div class="products">
+
+        <!-- Product Card 2 -->
+        <article class="products-box">
+          <img
+            src="./assets/img/novaWatch.webp"
+            width="260px"
+            height="212px"
+            alt="Nova Smart Watch"
+          />
+          <div class="card-body">
+            <p class="title">Nova Smart Watch</p>
+            <div class="muted">AMOLED • GPS • 5ATM</div>
+            <div class="price">₹6,499</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 13 -->
+        <article class="products-box">
+          <img
+            src="./assets/img/True Wireless Earbuds.jpg"
+            width="260px"
+            height="212px"
+            alt="True Wireless Earbuds"
+          />
+          <div class="card-body">
+            <p class="title">True Wireless Earbuds</p>
+            <div class="muted">Hi-Fi Sound • 20hr Battery</div>
+            <div class="price">₹1,299</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- Product Card 20 -->
+        <article class="products-box">
+          <img
+            src="./assets/img/Casual Sneakers.jpg"
+            width="260px"
+            height="212px"
+            alt="Casual Sneakers"
+          />
+          <div class="card-body">
+            <p class="title">Casual Sneakers</p>
+            <div class="muted">Trendy • Lightweight</div>
+            <div class="price">₹1,299</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="products-box">
+          <img
+            src="./assets/img/headphones.jpg"
+            width="260px"
+            height="212px"
+            alt="Aurora wireless headphones"
+          />
+          <div class="card-body">
+            <p class="title">Zeus-X Wireless Headphones</p>
+            <div class="muted">Over-ear • 32h battery</div>
+            <div class="price">₹4,999</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- most Searched -->
+    <div class="mostSearched" id="mostSearched">
+      <h2 class="new-arrival-header">Most Searched</h2>
+      <div class="products">
+
+        <!-- Product Card 19 -->
+        <article class="products-box"> 
+          <img
+            src="./assets/img/LED Table Lamp.jpg"
+            width="260px"
+            height="212px"
+            alt="LED Table Lamp"
+          />
+          <div class="card-body">
+            <p class="title">LED Table Lamp</p>
+            <div class="muted">Touch Control • Adjustable Brightness</div>
+            <div class="price">₹1,199</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 17 -->
+        <article class="products-box">
+          <img
+            src="./assets/img/Mechanical Keyboard.jpg"
+            width="260px"
+            height="212px"
+            alt="Mechanical Keyboard"
+          />
+          <div class="card-body">
+            <p class="title">Mechanical Keyboard</p>
+            <div class="muted">RGB Backlit • Blue Switches</div>
+            <div class="price">₹2,199</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 12 -->
+        <article class="products-box">
+          <img
+            src="./assets/img/Ergo Laptop Stand.jpg"
+            width="260px"
+            height="212px"
+            alt="Ergo Laptop Stand"
+          />
+          <div class="card-body">
+            <p class="title">Ergo Laptop Stand</p>
+            <div class="muted">Adjustable • Aluminum</div>
+            <div class="price">₹1,099</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 7 -->
+        <article class="products-box">
+          <img
+            src="./assets/img/bag.webp"
+            width="260px"
+            height="212px"
+            alt="Canvas Tote"
+          />
+          <div class="card-body">
+            <p class="title">Canvas Tote</p>
+            <div class="muted">Organic cotton</div>
+            <div class="price">₹499</div>
+            <div class="card-actions">
+              <button class="btn">Add to Cart</button>
+              <button class="btn link">Shop Now</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footerContent">
+          <div class="brand">
+            <span class="logo">VJ</span> <span>Shoppiee...</span>
+          </div>
+          <p class="muted">
+            ©<span id="year">2025</span> Shoppiee. All rights reserved.
+          </p>
+          <small>Premium products curated for the modern lifestyle</small>
+        </div>
+
+        <nav class="footerContent">
+          <h4>Shop</h4>
+          <ul class="footerList">
+            <li><a href="./assets/collection.html">All Products</a></li>
+            <li><a href="#newArrival">New Arrivals</a></li>
+            <li><a href="#mostSearched">Most Searched</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footerContent">
+          <h4>Support</h4>
+          <ul class="footerList">
+            <li><a href="./assets/about.html">About</a></li>
+            <li><a href="./assets/about.html">Shipping & Returns</a></li>
+            <li><a href="./assets/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h4>Newsletter</h4>
+          <p class="muted">
+            Subscribe to get exclusive discounts and updates...
+          </p>
+          <form style="padding: 5px">
+            <input
+              type="email"
+              placeholder="you@example.com"
+              aria-label="Email"
+              style="
+                width: 100%;
+                padding: 10px 12px;
+                border-radius: 12px;
+                border: 1px solid rgba(140, 150, 170, 0.3);
+                background: #0f1117;
+                color: var(--text);
+                margin-bottom: 8px;
+              "
+            />
+            <button class="newsletterBtn" type="button">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title and Icon -->
+    <title>Shoppiee</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- googele fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="logoContainer">
+        <span class="logo" aria-hidden="true">VJ</span>
+        <h1 class="brand">Shoppiee...</h1>
+      </div>
+
+      <div class="navbar-links">
+        <a href="../index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./collection.html">Collections</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+
+      <div class="navbar-menu-toggle" onclick="showNavbar()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- side navbar -->
+    <div class="side-navbar">
+      <p class="x-icon" onclick="closeNavbar()">
+        <i class="fa-solid fa-xmark"></i>
+      </p>
+
+      <div class="side-navbar-links">
+        <a href="../index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./collection.html">Collections</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </div>
+
+    <!-- About Session -->
+    <div class="toolbar">
+      <div class="container toolbar-inner">
+        <div class="tags">
+          <span class="tag">Free Shipping</span>
+          <span class="tag">7-Day Returns</span>
+          <span class="tag">Secure Checkout</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- service -->
+    <div class="service">
+      <div class="service-container1">
+        <div>
+          <h2>We Provide Best</h2>
+          <h2>Customer Experience</h2>
+        </div>
+
+        <div>
+          <p>
+            || We ensure that our Customer have the best Shopping Experience
+          </p>
+        </div>
+      </div>
+
+      <div class="service-container2">
+        <div>
+          <i class="fa-solid fa-shield-heart"></i>
+          <h4>Satisfaction Guarantee</h4>
+          <p>
+            We stand behind every purchase. If you're not 100% satisfied, we'll
+            make it right with easy returns and support.
+          </p>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-headset"></i>
+          <h4>24/7 Customer Support</h4>
+          <p>
+            Our support team is always here to help you with questions, orders,
+            or returns — anytime, any day.
+          </p>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-star"></i>
+          <h4>New Arrivals Every Day</h4>
+          <p>
+            Discover the latest trends and fresh styles daily — curated just for
+            you to keep your wardrobe up to date.
+          </p>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-truck-fast"></i>
+          <h4>Fast & Free Shipping</h4>
+          <p>
+            Enjoy lightning-fast delivery with free shipping on all orders, so
+            your favorites reach you sooner.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footerContent">
+          <div class="brand">
+            <span class="logo">VJ</span> <span>Shoppiee...</span>
+          </div>
+          <p class="muted">
+            ©<span id="year">2025</span> Shoppiee. All rights reserved.
+          </p>
+          <small>Premium products curated for the modern lifestyle</small>
+        </div>
+
+        <nav class="footerContent">
+          <h4>Shop</h4>
+          <ul class="footerList">
+            <li><a href="./collection.html">All Products</a></li>
+            <li><a href="../index.html">New Arrivals</a></li>
+            <li><a href="../index.html">Most Searched</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footerContent">
+          <h4>Support</h4>
+          <ul class="footerList">
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./about.html">Shipping & Returns</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h4>Newsletter</h4>
+          <p class="muted">
+            Subscribe to get exclusive discounts and updates...
+          </p>
+          <form style="padding: 5px">
+            <input
+              type="email"
+              placeholder="you@example.com"
+              aria-label="Email"
+              style="
+                width: 100%;
+                padding: 10px 12px;
+                border-radius: 12px;
+                border: 1px solid rgba(140, 150, 170, 0.3);
+                background: #0f1117;
+                color: var(--text);
+                margin-bottom: 8px;
+              "
+            />
+            <button class="newsletterBtn" type="button">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
