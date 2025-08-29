@@ -558,6 +558,26 @@ iframe {
     .search{  
         max-width:60%; 
     }
+        /* service session flex direction */
+    .service{
+        display: grid;
+        justify-content: center;
+    }
+    .service-container1 {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .service-container2 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .service-container2 div {
+        width: 760px;
+    }
+
 
     .products-box {
         flex-basis: 45%;
@@ -577,6 +597,9 @@ iframe {
 
     .service-container2 {
         flex-direction: column;
+    }
+    .service-container2 div {
+        width: fit-content;
     }
 
     /* size resize */
