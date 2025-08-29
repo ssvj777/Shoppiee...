@@ -583,11 +583,11 @@ iframe {
         display: flex;
         flex-direction: column;
         gap: 17px;
+        max-width: 740px;
     }
     .service-container2 div {
-        width: 760px;
+        width: fit-content;
     }
-
 
     .products-box {
         flex-basis: 45%;
